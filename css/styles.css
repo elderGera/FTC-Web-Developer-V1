@@ -1,0 +1,1638 @@
+/* How to name you class and ids */
+
+/* 
+    Any new classes that you create must begin with the name of your page.
+    For example: contact us page: container class name will be .contact
+    .contact
+    .home
+    .about
+    .aboutftc
+    .partners
+    .certifications
+    .testamonial
+    .traineeship
+    .404
+
+    If the name of your class is more than one word, separate them with hyphen.
+    For example: .contact-form, .about-img
+
+*/
+
+/* Reset the default styles of the browsers */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles for the website */
+body {
+  font: 100%/1.5 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #1c2331;
+}
+
+h1,
+h2,
+h3 {
+  color: #1f439e;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+p {
+  padding: 10px 0;
+}
+
+main p {
+  max-width: 90ch;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding: 3rem 0;
+}
+
+main a {
+  color: #c04734;
+  text-decoration: underline;
+}
+
+main a:hover,
+main a:focus {
+  color: #1f439e;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.index-download-brochure:hover .testamonial-card:hover,
+.testamonial-card:focus {
+  background-color: #ff816b;
+  color: #fff;
+}
+
+/************* PLEASE DO NOT TOUCH ANYTHING ABOVE THIS LINE; 
+ONLY ADD YOUR STYLES IN YOUR DESIGNETED SECTION *************/
+
+/************* Header styles *************/
+.index-header,
+.about-ftc-header,
+.partners-header {
+  position: relative;
+  height: 40vh;
+  background: linear-gradient(
+      0deg,
+      rgba(98, 98, 98, 0.6),
+      rgba(98, 98, 98, 0.6)
+    ),
+    url('../asset/images/home/home-header-bg-mobile.webp') no-repeat center
+      center;
+  background-size: cover;
+}
+.about-header {
+  position: relative;
+  height: 40vh;
+  background: linear-gradient(
+      0deg,
+      rgba(98, 98, 98, 0.6),
+      rgba(98, 98, 98, 0.6)
+    ),
+    url('../asset/images/about-course/about-course-header-bg-mobile.webp')
+      no-repeat center center;
+  background-size: cover;
+}
+.traineeship-header {
+  position: relative;
+  height: 40vh;
+  background: linear-gradient(
+      0deg,
+      rgba(98, 98, 98, 0.6),
+      rgba(98, 98, 98, 0.6)
+    ),
+    url('../asset/images/traineeship/traineeship-header-bg-mobile.webp')
+      no-repeat center center;
+  background-size: cover;
+}
+
+.testimonials-header {
+  position: relative;
+  height: 40vh;
+  background: linear-gradient(
+      0deg,
+      rgba(98, 98, 98, 0.6),
+      rgba(98, 98, 98, 0.6)
+    ),
+    url('../asset/images/testimonials/testimonials-header-bg-mobile.webp')
+      no-repeat center center;
+  background-size: cover;
+}
+
+.contact-header {
+  position: relative;
+  height: 40vh;
+  background: linear-gradient(
+      0deg,
+      rgba(98, 98, 98, 0.6),
+      rgba(98, 98, 98, 0.6)
+    ),
+    url('../asset/images/contact-us/contact-us-header-bg-mobile.webp') no-repeat
+      center center;
+  background-size: cover;
+}
+
+.certification-header {
+  position: relative;
+  height: 40vh;
+  background: linear-gradient(
+      0deg,
+      rgba(98, 98, 98, 0.6),
+      rgba(98, 98, 98, 0.6)
+    ),
+    url('../asset/images/certification/sertification-header-bg-mobile.webp')
+      no-repeat center center;
+  background-size: cover;
+}
+.header-nav img {
+  margin-top: 1rem;
+  width: 5rem;
+}
+.header-nav ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem 0 1rem 1rem;
+  top: 0;
+  left: 0;
+  background-color: #1c2331;
+  width: 50vw;
+  height: 100%;
+  transform: translateX(-100vw);
+  -webkit-transform: translateX(-100vw);
+  -moz-transform: translateX(-100vw);
+  -ms-transform: translateX(-100vw);
+  -o-transform: translateX(-100vw);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.header-nav ul li {
+  list-style-type: none;
+}
+.header-nav ul li a:hover {
+  background-color: unset;
+}
+.header-nav ul li:after {
+  display: block;
+  content: '';
+  border-bottom: solid 0.1rem #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+}
+.header-nav ul li:hover:after {
+  transform: scaleX(1);
+}
+.header-nav a {
+  color: white;
+}
+
+.ham-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 2rem;
+}
+.ham-container .lines {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.ham-active .lines {
+  transform: translateY(1rem) rotate(45deg);
+  -webkit-transform: translateY(1rem) rotate(45deg);
+  -moz-transform: translateY(1rem) rotate(45deg);
+  -ms-transform: translateY(1rem) rotate(45deg);
+  -o-transform: translateY(1rem) rotate(45deg);
+  background-color: #f05941;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.ham-container .lines:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+}
+
+.ham-active .lines:before {
+  transform: translateX(25rem);
+  -webkit-transform: translateX(25rem);
+  -moz-transform: translateX(25rem);
+  -ms-transform: translateX(25rem);
+  -o-transform: translateX(25rem);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.ham-container .lines:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+  top: 100%;
+}
+.ham-active .lines:after {
+  transform: translateY(-0.2rem) rotate(-90deg);
+  -webkit-transform: translateY(-0.2rem) rotate(-90deg);
+  -moz-transform: translateY(-0.2rem) rotate(-90deg);
+  -ms-transform: translateY(-0.2rem) rotate(-90deg);
+  -o-transform: translateY(-0.2rem) rotate(-90deg);
+  background-color: #f05941;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.ham-active ul {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+.header-nav-h1 {
+  text-align: center;
+  margin-top: 7vh;
+  width: 100%;
+  color: #fff;
+  font-size: clamp(1rem, 3vw + 0.5rem, 1.5rem);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.index-download-brochure {
+  text-align: center;
+  margin: 1rem auto 0;
+  display: block;
+  width: 15rem;
+  height: 3rem;
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #1f439e;
+  border-top-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.hide-brochure,
+.hide-h1 {
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transform: translateX(-100vw);
+  -webkit-transform: translateX(-100vw);
+  -moz-transform: translateX(-100vw);
+  -ms-transform: translateX(-100vw);
+  -o-transform: translateX(-100vw);
+}
+.nav-active a {
+  color: #f05941;
+}
+
+/************* Homepage styles *************/
+/* styling the home section */
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+/* styling the p and images in the class home-main-content */
+.home-main-content p,
+img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* styling the home-ftc-centre class to display items in columns and centered */
+.home-ftc-centre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* styling the main image to be centered with a width of 100% */
+.home-main-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-main-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* styling the two logos on the bottom of the page contained in the div home-logos */
+.home-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-logos img {
+  width: 75%;
+  height: auto;
+}
+
+/* styling the first logo in the home-logos div*/
+.home-logos img:first-child {
+  max-width: 120px;
+  padding-right: 10px;
+}
+
+/************* Traineeship styles *************/
+.traineeship .container {
+  min-width: 300px;
+  margin: 1em auto;
+  padding: 0 1em;
+}
+.traineeship .container h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.traineeship .container p {
+  padding: 0.5em 0;
+  text-align: justify;
+  font-size: 0.75em;
+}
+#img-traineeship {
+  width: 100%;
+}
+
+/************* Certifications styles *************/
+
+.certification-section:first-child {
+  margin-bottom: 1.25rem;
+}
+
+.certification-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.certification-article {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.certification-article p {
+  margin: 0.3rem 0;
+  font-weight: bold;
+}
+
+.certification-article p:nth-child(4) {
+  margin-top: auto;
+}
+
+.certification-article li {
+  list-style-position: inside;
+  margin-bottom: 0.4rem;
+}
+
+.progress p {
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #1f439e;
+  transition: width 0.5s ease-in-out;
+  width: 0;
+  animation: fill-progress 1s ease;
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+/************* About course styles *************/
+
+.about .container {
+  margin: 2rem auto;
+}
+.about-left,
+.about-right {
+  margin: 1rem auto;
+  max-width: 98%;
+}
+.about-left h2 {
+  margin: 1rem 0;
+}
+
+.about-left {
+  margin-top: 1.5rem;
+}
+.about-top {
+  display: flex;
+  justify-content: space-between;
+  height: 15rem;
+}
+.about-top-section-left,
+.about-top-section-right {
+  text-align: left;
+  width: 50%;
+}
+table {
+  width: 100%;
+  min-height: 15rem;
+  border-collapse: collapse;
+  border-right: 0.1rem solid #1c2331;
+  border-top: 0.1rem solid #1c2331;
+}
+.about-top-section-left table {
+  border-left: 0.1rem solid #1c2331;
+}
+tr {
+  height: 5rem;
+  border-bottom: 0.1rem solid #1c2331;
+}
+
+td {
+  min-height: 10rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.about-description img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.about-descriptions {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+.about-description {
+  width: 40%;
+}
+.about-description p {
+  margin-top: 1rem;
+  text-align: center;
+  word-wrap: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+/************** about course dropdown design starts here ************/
+.about-dropdown {
+  min-height: 6rem;
+  margin: 0.5rem;
+  overflow: hidden;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border-bottom: 0.01rem solid #1c2331;
+}
+.about-dropdown:nth-child(1) {
+  border-top: 0.01rem solid #1c2331;
+}
+.about-h3-question {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0 0 0.5rem;
+  font-size: 0.8rem;
+  min-height: 6rem;
+  cursor: pointer;
+}
+.about-h3-span {
+  width: 3rem;
+  margin-left: 1rem;
+}
+.about-h3-span::before {
+  content: '';
+  width: 1rem;
+  height: 0.01rem;
+  border-top: 0.01rem solid black;
+  display: block;
+  position: absolute;
+  top: 2.9rem;
+  right: 0.98rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.about-h3-span::after {
+  content: '';
+  width: 0.01rem;
+  height: 1rem;
+  border-left: 0.01rem solid black;
+  display: block;
+  position: absolute;
+  bottom: 2.6rem;
+  right: 1.465rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.about-minus::before {
+  border-top: 0.01rem solid #1c2331;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.about-minus::after {
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  border-left: 0.01rem solid #1c2331;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.about-div-answer {
+  width: 90vw;
+  margin-top: -200vw;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.about-div-answer img {
+  width: 0.6rem;
+  margin-right: 0.5rem;
+}
+.about-div-answer p {
+  font-size: 0.8rem;
+}
+.about-div-answer p span {
+  text-decoration: underline;
+}
+.about-div-answer ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+.about-div-answer li {
+  font-size: 0.8rem;
+}
+.about-a-to-break {
+  word-wrap: break-word;
+}
+.about-dropdown-dropped {
+  height: fit-content;
+  background-color: #b4d9e7;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.about-div-active {
+  margin-top: 0;
+  padding: 1rem;
+  width: 100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+/************* Testamonial styles *************/
+.testamonial p {
+  margin: 1rem 0;
+}
+
+.testamonial-section {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.testamonial-card {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0.5rem 1.5rem 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #b4d9e7;
+  border-top-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+.testamonial-card p {
+  font-size: 1rem;
+}
+
+.testamonial-person {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.testamonial-person img {
+  width: 75px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+/************* Certifications styles *************/
+
+/************* Contact Us styles *************/
+/***********  general styles ***********/
+iframe {
+  border: none;
+  height: 80vh;
+  position: relative;
+  width: 100%;
+}
+
+.contact-form,
+iframe {
+  box-shadow: 0px 0px 25px #626262;
+  border-radius: 15px;
+  margin: 2rem 0;
+}
+
+.container h2,
+.container h3 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact a {
+  padding: 0;
+}
+
+.contact a:hover,
+.contact a:focus {
+  background-color: #fff;
+  color: #f05941;
+}
+
+.contact address,
+.contact-form label {
+  font: inherit;
+  font-size: 1.125rem;
+}
+
+/***********  paragraphs' styles ***********/
+.contact p,
+.contact address {
+  padding-bottom: 2.25rem;
+}
+
+/***********  contact form styles ***********/
+textarea {
+  min-height: 100px;
+}
+
+.contact-form h3 {
+  color: #1c2331;
+}
+
+.contact-form {
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.contact-form label {
+  font-weight: bold;
+  width: 100%;
+  display: block;
+  text-align: left;
+  margin-bottom: 3px;
+  padding-left: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  border: 2px solid #626262;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 15px;
+  height: auto;
+  resize: none;
+  font: inherit;
+  font-size: 1rem;
+}
+
+/***********  button styles ***********/
+.form-button {
+  padding: 5px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 8px;
+  width: 30%;
+  min-width: 150px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+  background-color: #626262;
+  color: #fff;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #ff816b;
+  color: #fff;
+}
+
+/************* About FTC styles *************/
+/************* This section is reserved for the about ftc styles *************/
+
+/* styling the tabs */
+.about-ftc-tabs {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* styling the sections */
+.about-ftc-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* styling the labels for the tabs */
+.about-ftc-tabs label {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    position: relative;
+    -webkit-box-ordinal-group: 2;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid black;
+}
+
+/* styoling the tabs  */
+.about-ftc-tabs .about-ftc-tab {
+    order: 99;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+}
+
+/* styling the radio buttons used as labels */
+.about-ftc-tabs input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+/* changing the color of the label when is clicked */
+.about-ftc-tabs input[type="radio"]:checked + label {
+    background: #B4D9E7; 
+}
+
+/* and changing the color of the tabs  */
+.about-ftc-tabs input[type="radio"]:checked + label + .about-ftc-tab { 
+    display: block; 
+    background: #B4D9E7; 
+
+}
+
+/* adding the + symbol on the label */
+.about-ftc-tabs label::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+/* padding for the ul in the div about-ftc-tabs */
+.about-ftc-tabs ul {
+    padding-left: 15px;
+}
+
+/* changing the symbol to - when the label is clicked */
+.about-ftc-tabs input[type="radio"]:checked + label::after {
+    content: "-";
+}
+
+.about-ftc-tabs .about-ftc-tab > * {
+    width: 100%;
+}
+
+/* hiding the div for the content to display in the desktop */
+.about-ftc-main-content2{
+    display: none;
+}
+
+/************* Partners styles *************/
+.partnes-img {
+  display: block;
+  max-width: 60%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.partners article {
+  padding-bottom: 3rem;
+}
+.partners-head-text {
+  padding-top: 2rem;
+}
+
+/************* Footer styles *************/
+footer {
+  background-color: #1c2331;
+  color: #fff;
+  padding-top: 2rem;
+}
+
+footer h3,
+footer a {
+  color: inherit;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a:focus,
+footer a:hover {
+  background-color: inherit;
+  color: #ff816b;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.footer-icons img {
+  background-color: #fff;
+  padding: 0.4rem;
+  width: 44px;
+  height: 44px;
+  margin: 0 0.6rem;
+}
+
+.footer-icons img:focus,
+.footer-icons img:hover {
+  background-color: #ff816b;
+}
+.footer-icons a:focus,
+.footer-icons a:hover {
+  background-color: transparent;
+}
+
+/************* Tablet media query *************/
+@media screen and (min-width: 420px) {
+  .traineeship .container {
+    margin: 1em auto;
+    padding: 0 1em;
+  }
+  .traineeship .container h2 {
+    font-size: 1.125em;
+  }
+  .traineeship .container p {
+    font-size: 0.875em;
+  }
+}
+
+/************* Small desktop (from 820 till 1024) media query *************/
+@media screen and (min-width: 820px) {
+  /* Base Styles */
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  main {
+    padding: 3.75rem 0;
+  }
+
+  /* Header */
+  .index-header,
+  .about-ftc-header,
+  .partners-header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/home/home-header-bg-tablet.webp') no-repeat center
+        center;
+    background-size: cover;
+  }
+  .about-header {
+    position: relative;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/about-course/about-course-header-bg_tablet.webp')
+        no-repeat center center;
+    background-size: cover;
+  }
+
+  .traineeship-header {
+    position: relative;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/traineeship/traineeship-header-bg-tablet.webp')
+        no-repeat center center;
+    background-size: cover;
+  }
+
+  .testimonials-header {
+    position: relative;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/testimonials/testimonials-header-bg-tablet.webp')
+        no-repeat center center;
+    background-size: cover;
+  }
+
+  .contact-header {
+    position: relative;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/contact-us/contact-us-header-bg-tablet.webp')
+        no-repeat center center;
+    background-size: cover;
+  }
+
+  .certification-header {
+    position: relative;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/certification/sertification-header-bg-tablet.webp')
+        no-repeat center center;
+    background-size: cover;
+  }
+
+  /* about */
+  td {
+    min-height: 10rem;
+    font-size: 1rem;
+  }
+
+  .about-description {
+    width: 30%;
+    gap: 1rem;
+  }
+
+  /* Testimonials */
+  .testamonial-section {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .testamonial-card {
+    width: 49%;
+  }
+
+  .certification-articles {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5%;
+  }
+
+  .certification-article {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+  }
+
+  /* styling the tabs when displayed in a tablet or min-width 820px */
+.about-ftc-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the labels */
+    align-items: center; /* Center align vertically */
+  }
+
+/* styling the labels */
+.about-ftc-tabs label {
+    -webkit-box-ordinal-group: 2;
+    /* -webkit-order: 1; */
+    /* -ms-flex-order: 1; */
+    order: 1;
+    width: auto;
+    flex-grow: 1; /* Occupy the available width */
+    text-align: center; /* Center align the label text */
+    border: 1px solid black;
+    margin: -1px;
+    /* background: #B4D9E7; */
+}
+/* hiding the + and - symbols */
+.about-ftc-tabs label::after {
+    display: none;
+}
+
+  /* Partners */
+
+  .partners-head-text {
+    width: 60%;
+  }
+  .partnes-img {
+    max-width: 400px;
+  }
+
+  /* Footer */
+  footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer-item {
+    flex: 0 0 46%;
+    text-align: left;
+  }
+
+  .footer-browse {
+    order: 2;
+  }
+  .footer-text {
+    position: relative;
+    top: -140px;
+    order: 3;
+  }
+
+  .footer-icons {
+    order: 4;
+    position: relative;
+    left: -10px;
+  }
+  .footer-contact {
+    order: 5;
+    position: relative;
+    top: -180px;
+  }
+  .footer-copyright {
+    order: 6;
+    position: relative;
+    top: -30px;
+  }
+
+  /* Partners */
+  .partners-head-text {
+    width: 60%;
+  }
+  .partnes-img {
+    max-width: 400px;
+  }
+
+  /* Traineeship */
+
+  .traineeship .container {
+    margin: 1.5em auto;
+    padding: 0 1.5em;
+  }
+  .traineeship .container h2 {
+    font-size: 1.5em;
+  }
+  .traineeship .container p {
+    font-size: 1em;
+  }
+
+  /* Contact us  */
+
+  /***********  general styles ***********/
+  iframe {
+    height: 60vh;
+  }
+
+  .container h2,
+  .container h3 {
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  /***********  paragraphs' styles ***********/
+  .contact address {
+    width: 40%;
+  }
+
+  /***********  contact form styles ***********/
+  .contact-form {
+    text-align: left;
+    max-width: 65vw;
+    padding: 20px;
+  }
+
+  .contact-form label {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1em;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 73%;
+    padding: 7px;
+  }
+
+  /***********  button styles ***********/
+  .form-button {
+    width: 25%;
+  }
+}
+
+/************* Desktop media query *************/
+@media screen and (min-width: 1024px) {
+  /* Header */
+  .index-header,
+  .about-ftc-header,
+  .partners-header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 45vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/home/home-header-bg.webp') no-repeat center center;
+    background-size: cover;
+  }
+  .about-header {
+    position: relative;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/about-course/about-course-header-bg.webp') no-repeat
+        center center;
+    background-size: cover;
+  }
+
+  .traineeship-header {
+    position: relative;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/traineeship/traineeship-header-bg.webp') no-repeat
+        center center;
+    background-size: cover;
+  }
+
+  .testimonials-header {
+    position: relative;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/testimonials/testimonials-header-bg.webp') no-repeat
+        center center;
+    background-size: cover;
+  }
+
+  .contact-header {
+    position: relative;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/contact-us/contact-us-header-bg.webp') no-repeat
+        center center;
+    background-size: cover;
+  }
+
+  .certification-header {
+    position: relative;
+    height: 40vh;
+    background: linear-gradient(
+        0deg,
+        rgba(98, 98, 98, 0.6),
+        rgba(98, 98, 98, 0.6)
+      ),
+      url('../asset/images/certification/sertification-header-bg.webp')
+        no-repeat center center;
+    background-size: cover;
+  }
+  .ham-container {
+    display: none;
+  }
+  .header-nav img {
+    margin-top: 1rem;
+    width: 7rem;
+  }
+  .header-nav ul img {
+    display: none;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-nav ul {
+    position: unset;
+    background-color: unset;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 1rem;
+    width: 50vw;
+    transform: translateX(0vw);
+    -webkit-transform: translateX(0vw);
+    -moz-transform: translateX(0vw);
+    -ms-transform: translateX(0vw);
+    -o-transform: translateX(0vw);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+
+  /* Testimonials */
+  .testamonial-card {
+    width: 32%;
+  }
+
+  /* Certifications */
+  .certification-article {
+    flex-basis: 30%;
+  }
+
+  /******************** About starts here ******************/
+  .about .container {
+    display: flex;
+  }
+  .about-left,
+  .about-right {
+    width: 48%;
+  }
+
+  .about-description p {
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  footer .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .footer-item {
+    flex: 0 0 30%;
+    text-align: left;
+  }
+
+  .footer-contact {
+    order: 2;
+    position: relative;
+    top: 0px;
+  }
+
+  .footer-text {
+    order: 3;
+  }
+
+  .footer-icons {
+    top: 0px;
+    right: 15px;
+  }
+
+  .footer-copyright {
+    flex: 0 0 100%;
+    text-align: center;
+    position: relative;
+    top: -110px;
+  }
+
+  /************* Styles for Home Page *************/
+
+  /* styling the home-main-content div  */
+  .home-main-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* styling the home-section div */
+  .home-section {
+    flex-basis: 50%;
+    padding: 10px;
+  }
+
+  /* styling the h2 of the home-section div */
+  .home-section h2 {
+    margin-top: 0;
+  }
+
+  /* flex display for the home-middle-content aligning at the center */
+  .home-middle-content {
+    display: flex;
+    align-items: center;
+  }
+
+  /* styling the div for the code image */
+  .home-main-image {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .home-main-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .home-bottom-content {
+    display: flex;
+  }
+
+  .home-ftc-centre {
+    flex-basis: 60%;
+    padding-right: 20px;
+  }
+
+  .home-ftc-centre {
+    /* height: 260px; */
+  }
+
+  /* styling the div that contains the logos */
+  .home-logos {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-logo-content .home-logos img {
+    width: 78%;
+  }
+
+  .home-logo-content {
+    flex-basis: 40%;
+    padding: 10px;
+  }
+
+  /************* Styles for About FTC Page *************/
+
+  /* hiding the about-ftc-main-content */
+  .about-ftc-main-content {
+    display: none;
+  }
+
+  /* displaying the other main content with column direction */
+  .about-ftc-main-content2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* width for the sections */
+  .about-ftc-section {
+    width: 70%;
+  }
+
+  /* styling the about-ftc-content div */
+  .about-ftc-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-ftc-info {
+    width: 60%;
+  }
+
+  /* displaying in row-reverse the first and the last about-ftc-content divs */
+  .about-ftc-main-content2 .about-ftc-content:nth-child(3),
+  .about-ftc-main-content2 .about-ftc-content:last-child {
+    flex-direction: row-reverse;
+  }
+
+  .about-ftc-main-content2 ul {
+    padding-left: 20px;
+  }
+
+  /* styling the images in the about-ftc-image div */
+  .about-ftc-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Traineeship */
+  .traineeship .container {
+    margin: 2em auto;
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+  #col-1,
+  #col-2 {
+    flex-basis: 48%;
+    margin: auto 0;
+  }
+  .traineeship .container h2 {
+    font-size: 1.75em;
+  }
+  .traineeship .container p {
+    font-size: 1.125em;
+  }
+
+  /* Contact us */
+
+  /***********  general styles ***********/
+  iframe {
+    height: auto;
+    flex-basis: 50%;
+  }
+
+  /***********  paragraphs' styles ***********/
+  .contact p {
+    width: 73%;
+  }
+
+  /***********  contact form styles ***********/
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-form {
+    flex-basis: 40%;
+    padding: 0 0 0 10px;
+  }
+
+  .contact-form label {
+    padding-right: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 70%;
+  }
+  /***********  button styles ***********/
+  .form-button {
+    margin-bottom: 15px;
+  }
+}
+
+/*This media query is only for the nav */
+@media (min-width: 1366px) {
+  .header-nav ul {
+    width: 40vw;
+  }
+}
+
+/* To remove the underline hover effect from the hamburger menu image */
+@media (hover: hover) {
+  .header-nav ul li:nth-child(1):hover:after {
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+  }
+}
+,
